@@ -1,0 +1,1 @@
+la primera evalúa si el juego funciona correctamente; la segunda ayuda a entender y documentar cómo funciona. Ambas deben proponer cambios sin aplicarlos.

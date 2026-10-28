@@ -53,3 +53,12 @@ Tecnologías:
 	-Diseño visual:styles.css
 	-Funcionamiento,preguntas y puntuación: app.js;
 Prohibición de librerías, imágenes remotas y datos personales.
+
+Pruebas realizadas
+-Revision del codigo con OpenCode
+-Revision con la skill revision-juego y documentar-juego
+-Prueba de seguridad de los permisos
+
+Decisión sobre la mejora
+
+La mejora propuesta por el agente fue revisada, pero no se aplicó durante la prueba de seguridad. Se mantiene el código original hasta comprobar que la mejora es necesaria y que funciona correctamente.
