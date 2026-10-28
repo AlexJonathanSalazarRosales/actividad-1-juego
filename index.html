@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego DAW</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Juego DAW</h1>
+    <div class="status-bar" aria-live="polite" aria-atomic="true">
+      <span id="question-progress">Pregunta 1 de 6</span>
+      <span id="score-display">Puntuación: 0 / 6</span>
+    </div>
+  </header>
+
+  <main id="game-container">
+    <!-- Vista de preguntas -->
+    <section id="quiz-screen" aria-labelledby="question-text">
+      <form id="quiz-form">
+        <fieldset class="question-fieldset">
+          <legend id="question-text" class="question-legend"></legend>
+          <div id="options-container" class="options-grid" role="radiogroup" aria-labelledby="question-text">
+            <!-- Opciones generadas por app.js -->
+          </div>
+        </fieldset>
+
+        <div id="feedback-message" class="feedback" role="status" aria-live="polite" hidden></div>
+
+        <div class="actions">
+          <button type="submit" id="submit-btn" class="btn btn-primary">Comprobar respuesta</button>
+          <button type="button" id="next-btn" class="btn btn-secondary" hidden>Siguiente pregunta</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Vista final -->
+    <section id="result-screen" aria-labelledby="result-title" hidden>
+      <h2 id="result-title">Juego terminado</h2>
+      <p id="final-score-text" aria-live="polite"></p>
+      <button type="button" id="restart-btn" class="btn btn-primary">Reiniciar juego</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
